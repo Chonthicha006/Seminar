@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsthm}
+
+\usepackage[text={7in,10in},centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage[no-math]{fontspec}
+\usepackage{polyglossia}
+\pagenumbering{gobble}
+\usepackage{verbatim}
+\immediate\write18{texcount -tex -sum  \jobname.tex > \jobname.wordcount.tex}
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \large 	
+  \textbf{\textit{Keywords---}} #1
+}
+\fancyhead{สสสส}
+\title{{\textbf{สมการไดโอเเฟนไทน์ {\large{$2^{x}+p^{y}=z^{2}$}} เมื่อ {\large{$x\neq1$}} และ {\large{$ p\equiv 3\left ( 3mod4 \right )$}}\\
+โดย สุธน ตาดี}}}
+\author{\Large{\textbf{นำเสนอโดย} นางสาวชลธิชา พ่วงเฟื่อง}\\
+        \Large\textbf{อาจารย์ที่ปรึกษา} :  ผศ. ดร.ทรงพล ศรีวงค์ษา\\}
+\date{} % Comment this line to show today's date
+\setmainfont{TH Sarabun New}
+\begin{document}
+\maketitle
+
+\begin{center}\Large\textbf{บทคัดย่อ}
+\end{center}
+\vspace{5pt}
+\hspace*{30pt}\Large       {งานวิจัยนี้เป็นการศึกษาเกี่ยวกับสมการไดโอแฟนไทน์(Diophantine equation) ซึ่งสมการไดโอเฟนไทน์เป็นสมการที่ได้ศึกษากัน\\อย่างมากมายและศึกษาในหลายรูปแบบ รูปแบบหนึ่งที่ได้ศึกษากันอย่างกว้างขวางคือ 
+สมการที่อยู่ในรูป   $a^{x}+b^{y}=z^{2}$ \\ในงานวิจัยนี้เกี่ยวกับการหาผลเฉลยของสมการไดโอแฟนไทน์ 
+โดยดังกล่าวได้มีการนำเสนอทฤษฎีบทและแนวคิดบางประการที่เกี่ยวข้องกับ\\
+สมการไดโอแฟนไทน์และนำข้อความคาดการณ์กาตาลัน(Catalan’s conjecture) มาใช้ประโยชน์ในการพิสูจน์ครั้งนี้โดยแยกกรณี \\และหาผลเฉลยทั้งหมดที่เป็นจำนวนเต็ม
+ที่ไม่เป็นลบของสมการไดโอแฟนไทน์ $2^{x}+p^{y}=z^{2}$ เมื่อ $x\neq1$ และ $p\equiv 3\left ( 3mod4 \right )$
+จะแสดงให้เห็นว่า ผลเฉลยที่เป็นจำนวนเต็มที่ไม่เป็นลบของสมการไดโอแฟนไทน์นี้อยู่ในรูปแบบต่อไปนี้เท่านั้น คือ\\
+$\left ( x,p,y,z \right )\in \left \{ \left (3,p,0,3  \right ) \right \}\cup \left \{ \left ( 0,3,1,2 \right ) \right \}\cup \left \{ \left ( 2+log _{2}\left ( p+1 \right )\right ),p,2,p+2):log_{2}\left ( p+1 \right )      \in   \mathbb{Z}    \right \}$}
+\hspace{30pt}
+\hspace{30pt}
+\newpage %ขึ้นหน้าใหม่
+
+
+
+%TC:ignore
+%\keywords{one, two, three, four}
+\begin{thebibliography}{00}
+\bibitem{b2} Clarke, Arthur C. 2001: A Space Odyssey. New York: Roc, 1968. 297.
+\end{thebibliography}
+%TC:endignore
+
+% Word count
+\verbatiminput{\jobname.wordcount.tex}
+
+\end{document}
